@@ -34,18 +34,12 @@ Open the URL Vite prints (usually http://localhost:5173).
 ## Publish
 
 ```bash
-cd playground
 npm run build
 ```
 
-`dist/` is a static site. For GitHub Pages, push this folder as the repository root and deploy `dist/`, or commit `dist` on a `gh-pages` branch.
+`dist/` is a static site. This repo deploys it to GitHub Pages on every push to `main` (`.github/workflows/pages.yml`).
 
-```bash
-cd playground
-git init
-gh repo create supermimic-playground --public --source=. --remote=origin
-# after npm run build, publish dist with your usual Pages setup
-```
+Live demo: https://immortala.github.io/SuperMimic_Reproduced_WebDemo/
 
 The G1 meshes come from the Unitree MJCF shipped with mjlab. Keep that license with the assets if you redistribute them.
 
