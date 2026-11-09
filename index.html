@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SuperMimic playground</title>
+</head>
+<body>
+  <div id="hud">
+    <h1>SuperMimic</h1>
+    <p id="status">Loading MuJoCo…</p>
+    <div id="modes">
+      <button data-mode="stand" class="on">Stand <kbd>1</kbd></button>
+      <button data-mode="walk">Walk <kbd>2</kbd></button>
+      <button data-mode="run">Run <kbd>3</kbd></button>
+      <button id="reset">Reset <kbd>R</kbd></button>
+    </div>
+  </div>
+  <aside id="help">
+    <p class="help-title">Controls</p>
+    <div class="help-grid">
+      <div><span class="keys"><kbd>W</kbd><kbd>Up</kbd></span><span>Forward</span></div>
+      <div><span class="keys"><kbd>S</kbd><kbd>Down</kbd></span><span>Back</span></div>
+      <div><span class="keys"><kbd>A</kbd><kbd>Left</kbd></span><span>Turn left</span></div>
+      <div><span class="keys"><kbd>D</kbd><kbd>Right</kbd></span><span>Turn right</span></div>
+      <div><span class="keys"><kbd>Shift</kbd></span><span>Run</span></div>
+      <div><span class="keys"><kbd>Drag</kbd></span><span>Orbit</span></div>
+    </div>
+  </aside>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
